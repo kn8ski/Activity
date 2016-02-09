@@ -15,7 +15,7 @@ import java.sql.Statement;
 import java.util.ArrayList;
 import mijzcx.synapse.desk.utils.Lg;
 import mijzcx.synapse.desk.utils.SqlStringUtil;
-import teachers.util.MyConnection;
+import register.util.MyConnection;
 
 public class myteachers {
     

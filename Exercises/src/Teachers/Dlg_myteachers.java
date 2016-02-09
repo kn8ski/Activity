@@ -24,11 +24,11 @@ import mijzcx.synapse.desk.utils.KeyMapping;
 import mijzcx.synapse.desk.utils.KeyMapping.KeyAction;
 import mijzcx.synapse.desk.utils.TableWidthUtilities;
 import synsoftech.util.DateType;
-import static teachers.myteachers.myteachers.add_data;
-import teachers.myteachers.myteachers.to_myteachers;
-import static teachers.myteachers.myteachers.update_data;
-import teachers.util.Dlg_confirm_action;
-import teachers.util.Dlg_confirm_save;
+import static Teachers.myteachers.add_data;
+import Teachers.myteachers.to_myteachers;
+import static Teachers.myteachers.update_data;
+import register.util.Dlg_confirm_action;
+import register.util.Dlg_Info;
 
 
 
@@ -753,13 +753,13 @@ public class Dlg_myteachers extends javax.swing.JDialog {
         int status = 0;
         
         Window p = (Window) this;
-        Dlg_confirm_save nd = Dlg_confirm_save.create(p, true);
-        nd.setTitle("");
-        
-        nd.setCallback(new Dlg_confirm_save.Callback() {
+        Dlg_Info nd = Dlg_Info.create(p, true);
+        nd.setTitle("");       
+            
+        nd.setCallback(new Dlg_Info.Callback() {
             
             @Override
-            public void ok(CloseDialog closeDialog, Dlg_confirm_save.OutputData data) {
+            public void ok(CloseDialog closeDialog, Dlg_Info.OutputData data) {
                 closeDialog.ok();
                 
             }
